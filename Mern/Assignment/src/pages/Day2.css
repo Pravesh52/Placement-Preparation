@@ -8,49 +8,57 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 15px 50px;
-
     background-color: lightblue;
-
 }
 
 .logo{
-    font-size: medium;
-    font-weight: 100;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.Menu{
+.menu{
     display: flex;
-    margin-right: 100px;
-
-    /* justify-content: space-between; */
-    /* align-items: center; */
     gap: 30px;
+    margin-right: 100px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
 .btn-container{
-    justify-content: space-between;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.button{
     display: flex;
     gap: 20px;
 }
 
-.button button{
+.btn-container button{
     padding: 10px 20px;
     background-color: royalblue;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
-.button button:hover{
+.btn-container button:hover{
     background-color: darkblue;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.gallery img{
+    height: 200px;
+    width: 100%;
+}
+
+.featured{
+    grid-column: span,2;
 }
