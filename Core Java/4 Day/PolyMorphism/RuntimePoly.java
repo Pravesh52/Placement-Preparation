@@ -48,9 +48,9 @@ class PaypalPayment implements PaymentGateway {
 }
 
 class PaymentProcessor{
-    public void processPayment(PaymentGateway payment,double amount){
+    public void processPayment(PaymentGateway p,double amount){
          System.out.println("\nProcessing Payment...");
-        payment.pay(amount);   // Runtime decides which pay() method to call
+        p.pay(amount);   // Runtime decides which pay() method to call
 
     }
 }
