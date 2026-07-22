@@ -1,67 +1,69 @@
-import React from 'react'
+import React from "react";
+import "./Day1.css";
 
 const Day1 = () => {
   return (
-    <div>
-      Day 1 Assignment
+    <div className="container">
+      <h2>Day 1 Assignment</h2>
 
+      <form className="registration-form">
+        <div className="form-group">
+          <label>Name</label>
+          <input type="text" />
+        </div>
 
-      <form action="/submit" method='Post'>
-         <label>Name:</label>
-         <input type='text'/>
-         <br></br>
-         <br></br>
+        <div className="form-group">
+          <label>Email</label>
+          <input type="email" />
+        </div>
 
-         <label>Email:</label>
-         <input type='email'/>
+        <div className="form-group">
+          <label>Password</label>
+          <input type="password" />
+        </div>
 
-         <br></br>
-         <br></br>
+        <div className="form-group">
+          <label>Confirm Password</label>
+          <input type="password" />
+        </div>
 
-         <label>Password:</label>
-         <input type='passowrd'/>
+        <div className="form-group">
+          <label>Date of Birth</label>
+          <input type="date" />
+        </div>
 
-         <br></br>
-         <br></br>
+        <div className="form-group">
+          <label>City</label>
+          <select>
+            <option value="">Choose Option</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Rewa">Rewa</option>
+          </select>
+        </div>
 
-         <label>Confirm Password:</label>
-         <input type='password'/>
-         <br></br>
-         <br></br>
+        <div className="form-group full-width">
+          <label>Gender</label>
 
-         <label>Date of Birth:</label>
-         <input type='date'></input>
+          <div className="radio-group">
+            <label>
+              <input type="radio" name="gender" value="Male" />
+              Male
+            </label>
 
-         <br></br>
-         <br></br>
+            <label>
+              <input type="radio" name="gender" value="Female" />
+              Female
+            </label>
+          </div>
+        </div>
 
-         <label>Gender:</label>
-         <input type="radio"
-         name='gender'
-            value="Male" />Male
-
-            <input 
-            type='radio'
-             name='gender'
-             value="Female"/>Female
-
-      <br></br>
-      <br></br>
-        <label >City:</label>
-        <select name="city" id="city">
-          <option value="">Choose Option</option>
-        <option value="delhi">Delhi</option>
-        <option value="Mumbai">Mumbai</option>
-        <option value="Rewa">Rewa</option>
-        </select>
-        <br></br>
-        <br></br>
-        <button type='submit'>Submit</button>
-         
+        <button className="submit-btn" type="submit">
+          Submit
+        </button>
       </form>
-
     </div>
-  )
-}
+  );
+};
 
-export default Day1
+export default Day1;
