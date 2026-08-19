@@ -12,6 +12,9 @@ const Day3  = () => {
 
         Mobile-first approach use karo, media queries likho.
         </p>
+        
+
+
     </div>
   )
 }
