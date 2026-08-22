@@ -1,7 +1,7 @@
+// Selection sort use karke array
+// ko descending order mein sort karo.
 
-// Selection sort
-// Time complexity: o(n2)
-public class selectionsort {
+public class Assignment2 {
     public static void main(String[] args) {
         int arr[]={5,3,8,1,2};
 
@@ -9,22 +9,19 @@ public class selectionsort {
             int minindex=i;
             for(int j=i+1;j<arr.length;j++){
 
-                if(arr[j]<arr[minindex]){
+                if(arr[j]>arr[minindex]){
                     minindex=j;
                 }
-
             }
-            // swap
 
             int temp=arr[i];
             arr[i]=arr[minindex];
             arr[minindex]=temp;
         }
-
-        for(int i:arr){
-            System.out.println(i);
-        }
-
-
+       
+      
+       for(int i: arr){
+        System.out.println(i);
+       }
     }
 }
