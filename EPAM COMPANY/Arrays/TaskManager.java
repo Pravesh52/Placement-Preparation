@@ -22,6 +22,7 @@
 public class TaskManager {
 
     static class Task {
+        
         int taskId;
         String assigner;
         String reporter;
@@ -79,7 +80,7 @@ public class TaskManager {
             }
 
             Task temp = head;
-            
+
 
             while (temp.next != null) {
                 temp = temp.next;
