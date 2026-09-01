@@ -19,6 +19,8 @@
 // ab isme ek Manager rakhna hai jo according to priority 1 wala task hai usko 
 // upar rakho aur jo 0 hai usko automatic neeche kar do
 
+
+
 public class TaskManager {
 
     static class Task {
@@ -126,5 +128,7 @@ public class TaskManager {
 
 
         manager.printTasks();
+
+
     }
 }
