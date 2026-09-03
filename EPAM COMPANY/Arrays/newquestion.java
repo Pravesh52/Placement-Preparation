@@ -48,7 +48,7 @@ public class newquestion {
 
             students[i] = new Student(id, name, days);
 
-            for (int j = 0; j < days; j++) {
+            for (int j=0; j < days; j++) {
 
                 System.out.println("\nDay " + (j + 1));
 
